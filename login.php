@@ -1,17 +1,12 @@
 <?php
 // Thiết lập thông tin kết nối đến database
-
 $servername = "database-webserver-lab7.cqvc6auk43k0.us-east-1.rds.amazonaws.com;
-
 $username = "admin";
-$password = "12345678";
+$password = "minhchi123";
 $dbname = "myDB";
 // Tạo kết nối đến database
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Kiểm tra kết nối
-
-
-
 if ($conn->connect_error) {
 die("Ket noi khong thanh cong: " . $conn->connect_error);
 }
@@ -35,19 +30,14 @@ vào trang chào mừng
 echo "Bạn đã đăng nhập không thành công"; }
 }
 ?>
-
 <!DOCTYPE html>
 <html>
-
 <head>
 <meta charset="UTF-8">
 <title>Đăng nhập</title>
 </head>
 <body>
 <h2>Đăng nhập</h2>
-
-77
-
 <form method="post" action="<?php echo
 htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 <label>Tên đăng nhập:</label>
